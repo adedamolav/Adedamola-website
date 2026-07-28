@@ -1,8 +1,8 @@
+import React from 'react'
 import Link from 'next/link'
 
 const social = [
   { label: 'Instagram', href: '#' },
-  { label: 'Are.na', href: '#' },
   { label: 'LinkedIn', href: '#' },
   { label: 'Read.cv', href: '#' },
 ]
@@ -15,11 +15,15 @@ export function SiteFooter() {
           <div className="flex flex-col gap-3">
             <p className="label-mark text-muted-foreground">Studio</p>
             <p className="max-w-xs leading-relaxed">
-              Maya Kestrel
+              Adekunle Adedamola
               <br />
-              Rua da Boavista 42, Lisbon
+              Have a brand, campaign, or product you'd like to bring to life?
+              Tell me about your goals, challenges, and timeline, and let's start
+              the conversation.
               <br />
-              studio@mayakestrel.com
+              <Link href="mailto:adedamolav56@gmail.com" className="underline decoration-1 underline-offset-4 transition-colors hover:text-primary">
+                adedamolav56@gmail.com
+              </Link>
             </p>
           </div>
 
@@ -56,14 +60,14 @@ export function SiteFooter() {
           aria-hidden="true"
           className="display-tight -mb-3 text-center text-[clamp(3.5rem,17vw,15rem)] text-foreground/90"
         >
-          Kestrel
+          Adedamola
         </p>
       </div>
 
       <div className="border-t border-foreground/15">
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-5 py-5 md:px-8">
           <p className="label-mark text-muted-foreground">
-            © {new Date().getFullYear()} Maya Kestrel Studio
+            © {new Date().getFullYear()} Adedamolav
           </p>
           <p className="label-mark text-muted-foreground">
             Placeholder portfolio content
