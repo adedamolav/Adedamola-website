@@ -65,10 +65,11 @@ export function SiteFooter() {
             © {new Date().getFullYear()} Adedamolav
           </p>
           <p className="label-mark text-muted-foreground">
-            Placeholder portfolio content
+            Portfolio website
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
+export default SiteFooter;
