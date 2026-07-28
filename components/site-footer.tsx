@@ -17,7 +17,6 @@ export function SiteFooter() {
               Have a brand, campaign, or product you'd like to bring to life?
               Tell me about your goals, challenges, and timeline, and let's start
               the conversation.
-            </p>
               <Link href="mailto:adedamolav56@gmail.com" className="underline decoration-1 underline-offset-4 transition-colors hover:text-primary">
                 adedamolav56@gmail.com
               </Link>
