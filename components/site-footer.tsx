@@ -17,11 +17,10 @@ export function SiteFooter() {
               Have a brand, campaign, or product you'd like to bring to life?
               Tell me about your goals, challenges, and timeline, and let's start
               the conversation.
-              <Link href="mailto:adedamolav56@gmail.com" className="underline decoration-1 underline-offset-4 transition-colors hover:text-primary">
-                adedamolav56@gmail.com
-              </Link>
+               <Link href="mailto:adedamolav56@gmail.com">
+                  adedamolav56@gmail.com
+               </Link>
             </p>
-          </div>
 
           <nav aria-label="Social" className="flex flex-col gap-3">
             <p className="label-mark text-muted-foreground">Elsewhere</p>
