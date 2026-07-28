@@ -34,31 +34,30 @@ export function About() {
           <div className="flex flex-col gap-8 lg:col-span-7">
             <span className="label-mark text-primary">About</span>
             <h2 className="display-tight text-[clamp(2.25rem,5.5vw,4.5rem)] text-balance">
-              Eleven years of making
+              CREATING BRANDS AND CAMPAIGNS
               <br />
-              things clients can
-              <br />
-              <span className="text-primary">actually use</span>
+              <span className="text-primary">THAT DRIVE BUSINESS</span>
             </h2>
 
             <div className="flex flex-col gap-5 text-lg leading-relaxed text-pretty">
               <p>
-                I spent six years inside two branding studios before going
-                independent in 2019. That means you get studio-grade thinking
-                without the account layer — you talk to the person drawing the
-                work, every time.
+               Over the past five years, I've worked at the intersection of branding, marketing,
+               and digital product design, helping businesses transform ideas into meaningful
+               customer experiences.
               </p>
               <p>
-                My favourite projects are the ones with real constraints: a
-                printer&apos;s minimum order, a two-ink budget, a founder who
-                has to keep the brand alive without a designer on staff. Good
-                systems survive contact with reality, and reality is usually
-                cheaper than the pitch deck suggests.
+                From integrated marketing campaigns and retail branding to UI/UX and creative systems,
+                I collaborate with marketing, product, engineering, and business teams to solve communication
+                challenges through strategic creativity.
               </p>
               <p>
-                Everything I hand over comes documented and templated. The
-                measure of a brand system isn&apos;t the launch — it&apos;s
-                what it looks like eighteen months later.
+               I believe great creative work starts with understanding the business problem—not just
+               producing beautiful visuals. Every campaign, identity system, interface, and presentation I create is designed to
+               strengthen brand perception, improve customer engagement, and support measurable business outcomes.
+              </p>
+              <p>
+               Today, my focus extends beyond design execution. I help shape creative direction, improve design systems,
+               streamline creative operations, and build scalable visual experiences that grow alongside the businesses they serve.
               </p>
             </div>
 
