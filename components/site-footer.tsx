@@ -1,0 +1,75 @@
+import Link from 'next/link'
+
+const social = [
+  { label: 'Instagram', href: '#' },
+  { label: 'Are.na', href: '#' },
+  { label: 'LinkedIn', href: '#' },
+  { label: 'Read.cv', href: '#' },
+]
+
+export function SiteFooter() {
+  return (
+    <footer className="bg-background">
+      <div className="mx-auto max-w-[1500px] px-5 py-12 md:px-8 md:py-16">
+        <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+          <div className="flex flex-col gap-3">
+            <p className="label-mark text-muted-foreground">Studio</p>
+            <p className="max-w-xs leading-relaxed">
+              Maya Kestrel
+              <br />
+              Rua da Boavista 42, Lisbon
+              <br />
+              studio@mayakestrel.com
+            </p>
+          </div>
+
+          <nav aria-label="Social" className="flex flex-col gap-3">
+            <p className="label-mark text-muted-foreground">Elsewhere</p>
+            <ul className="flex flex-col gap-2">
+              {social.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="underline decoration-1 underline-offset-4 transition-colors hover:text-primary"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="flex flex-col gap-3">
+            <p className="label-mark text-muted-foreground">Next steps</p>
+            <Link
+              href="/#contact"
+              className="label-mark w-fit border border-foreground/25 px-5 py-3 transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              Start a project
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="overflow-hidden border-t border-foreground/15 px-5 md:px-8">
+        <p
+          aria-hidden="true"
+          className="display-tight -mb-3 text-center text-[clamp(3.5rem,17vw,15rem)] text-foreground/90"
+        >
+          Kestrel
+        </p>
+      </div>
+
+      <div className="border-t border-foreground/15">
+        <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-5 py-5 md:px-8">
+          <p className="label-mark text-muted-foreground">
+            © {new Date().getFullYear()} Maya Kestrel Studio
+          </p>
+          <p className="label-mark text-muted-foreground">
+            Placeholder portfolio content
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
