@@ -12,14 +12,12 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1500px] px-5 py-12 md:px-8 md:py-16">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="flex flex-col gap-3">
-            <p className="label-mark text-muted-foreground">Studio</p>
+            <p className="label-mark text-muted-foreground">Adekunle Adedamola</p>
             <p className="max-w-xs leading-relaxed">
-              Adekunle Adedamola
-              <br />
               Have a brand, campaign, or product you'd like to bring to life?
               Tell me about your goals, challenges, and timeline, and let's start
               the conversation.
-              <br />
+            </p>
               <Link href="mailto:adedamolav56@gmail.com" className="underline decoration-1 underline-offset-4 transition-colors hover:text-primary">
                 adedamolav56@gmail.com
               </Link>

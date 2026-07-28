@@ -21,22 +21,24 @@ export function Contact() {
           <div className="flex flex-col gap-8 lg:col-span-5">
             <span className="label-mark text-primary">Contact</span>
             <h2 className="display-tight text-[clamp(2.5rem,7vw,6rem)] text-balance">
-              Got something
+             LET'S BUILD
               <br />
-              worth building?
+              SOMETHING THAT
+              MATTERS
             </h2>
             <p className="text-lg leading-relaxed text-pretty">
-              Tell me what you&apos;re making, who it&apos;s for and when it
-              needs to exist. I&apos;ll come back with a realistic scope, a
-              fixed fee and an honest answer about whether I&apos;m the right
-              person for it.
+              Whether you're launching a brand, planning a campaign,
+              refining a digital product, or looking to strengthen your
+              marketing, I'd love to hear about it. Share your goals, challenges,
+              and timeline, and let's explore how strategic creativity can help
+              move your business forward.
             </p>
 
             <dl className="flex flex-col border-t border-foreground/15">
               {[
-                { label: 'Email', value: 'studio@mayakestrel.com' },
-                { label: 'Instagram', value: '@mayakestrel.studio' },
-                { label: 'Typical engagement', value: '6–10 weeks' },
+                { label: 'Email', value: 'adedamolav56@gmail.com' },
+                { label: 'Instagram', value: '@adedamolav' },
+                { label: 'Response time', value: 'Usually within 24 hours' },
               ].map((item) => (
                 <div
                   key={item.label}
@@ -116,7 +118,7 @@ export function Contact() {
 
                   <div className="flex flex-col gap-2">
                     <label htmlFor="company" className="label-mark">
-                      Company <span className="normal-case">(optional)</span>
+                      Company <span className="normal-case">(organization)</span>
                     </label>
                     <input
                       id="company"
@@ -130,19 +132,20 @@ export function Contact() {
 
                   <div className="flex flex-col gap-2">
                     <label htmlFor="budget" className="label-mark">
-                      Budget range
+                      How can i help?
                     </label>
                     <select
                       id="budget"
                       name="budget"
-                      defaultValue="10-25k"
+                      defaultValue="Other"
                       className={fieldClasses}
                     >
-                      <option value="under-10k">Under £10k</option>
-                      <option value="10-25k">£10k – £25k</option>
-                      <option value="25-50k">£25k – £50k</option>
-                      <option value="50k-plus">£50k+</option>
-                      <option value="unsure">Not sure yet</option>
+                      <option value="under-10k">Branding</option>
+                      <option value="10-25k">Campaign Design</option>
+                      <option value="25-50k">Creative Strategy</option>
+                      <option value="50k-plus">UI/UX</option>
+                      <option value="50k-plus">Marketing Assets</option>
+                      <option value="unsure">Other</option>
                     </select>
                   </div>
                 </div>
@@ -156,7 +159,7 @@ export function Contact() {
                     name="message"
                     rows={6}
                     required
-                    placeholder="What are you building, who is it for, and what has to be true by launch?"
+                    placeholder="Tell me about your business, the challenge you're solving, your goals, and what success looks like."
                     aria-describedby={
                       state.errors.message ? 'message-error' : undefined
                     }
@@ -180,7 +183,7 @@ export function Contact() {
                   disabled={pending}
                   className="label-mark flex items-center justify-center gap-2 bg-foreground px-8 py-5 text-background transition-colors hover:bg-primary disabled:opacity-60"
                 >
-                  {pending ? 'Sending…' : 'Send enquiry'}
+                  {pending ? 'Sending…' : 'START THE CONVERSATION'}
                   <ArrowRight className="size-4" aria-hidden="true" />
                 </button>
               </form>
