@@ -11,17 +11,21 @@ export function SiteFooter() {
     <footer className="bg-background">
       <div className="mx-auto max-w-[1500px] px-5 py-12 md:px-8 md:py-16">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
+          
+          {/* Main Info Column */}
           <div className="flex flex-col gap-3">
             <p className="label-mark text-muted-foreground">Adekunle Adedamola</p>
             <p className="max-w-xs leading-relaxed">
               Have a brand, campaign, or product you'd like to bring to life?
               Tell me about your goals, challenges, and timeline, and let's start
-              the conversation.
-               <Link href="mailto:adedamolav56@gmail.com">
-                  adedamolav56@gmail.com
-               </Link>
+              the conversation.{" "}
+              <Link href="mailto:adedamolav56@gmail.com" className="underline">
+                adedamolav56@gmail.com
+              </Link>
             </p>
+          </div> {/* <-- FIXED: Closed this div properly */}
 
+          {/* Social Nav Column */}
           <nav aria-label="Social" className="flex flex-col gap-3">
             <p className="label-mark text-muted-foreground">Elsewhere</p>
             <ul className="flex flex-col gap-2">
@@ -38,6 +42,7 @@ export function SiteFooter() {
             </ul>
           </nav>
 
+          {/* CTA Column */}
           <div className="flex flex-col gap-3">
             <p className="label-mark text-muted-foreground">Next steps</p>
             <Link
@@ -47,9 +52,11 @@ export function SiteFooter() {
               Start a project
             </Link>
           </div>
-        </div>
+
+        </div> {/* <-- FIXED: This now successfully closes the row container */}
       </div>
 
+      {/* Decorative Text Banner */}
       <div className="overflow-hidden border-t border-foreground/15 px-5 md:px-8">
         <p
           aria-hidden="true"
@@ -59,6 +66,7 @@ export function SiteFooter() {
         </p>
       </div>
 
+      {/* Sub-Footer Copyright */}
       <div className="border-t border-foreground/15">
         <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-between gap-3 px-5 py-5 md:px-8">
           <p className="label-mark text-muted-foreground">
@@ -72,4 +80,3 @@ export function SiteFooter() {
     </footer>
   );
 }
-export default SiteFooter;
